@@ -1,0 +1,25 @@
+# https://www.beecrowd.com.br/judge/pt/custom-problems/view/1733
+
+funcionario = input()
+horex = float(input())
+
+salmin = 1192.40
+valhorex = 10
+
+salex = horex * valhorex
+
+salB = 3*salmin + salex
+
+if salB> 2000:
+    inss = salB*0.12
+    if salB > 2500:
+        impost = salB*0.20
+    else:
+        impost = salB
+else:
+    inss = salB*0.05
+
+saliquid = salB - (inss+impost)
+
+print("Nome: %s" %(funcionario))
+print("Salário bruto: R$%.2f" %(salB))

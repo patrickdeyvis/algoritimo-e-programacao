@@ -1,0 +1,8 @@
+# https://www.beecrowd.com.br/judge/pt/problems/view/1002
+
+S = float(input())
+pi = 3.14159
+
+A = pi*(S*S)
+
+print("A=%.4f" %(A))
